@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Beef Content System 三层递归工作流</title>
+  <desc id="desc">已有内容分为内容层、方法层和元方法层，通过真实性、差异性和读者价值筛选后形成系列路线，新结果再进入下一轮。</desc>
+  <defs>
+    <linearGradient id="loop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5A64"/>
+      <stop offset="0.5" stop-color="#9A78FF"/>
+      <stop offset="1" stop-color="#3370FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="470" rx="28" fill="#12151A"/>
+  <text x="54" y="58" fill="#F7F5F2" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif" font-size="38" font-weight="760">从一篇内容，到下一轮真实素材</text>
+  <text x="54" y="91" fill="#8F99A7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif" font-size="18">扩展、筛选、编排、发布，然后让新结果重新进入循环</text>
+
+  <g transform="translate(48 112)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif">
+    <g transform="translate(0 78)">
+      <rect width="190" height="116" rx="20" fill="#20242C" stroke="#3A404A"/>
+      <text x="22" y="34" fill="#FF8A91" font-size="16" font-weight="750">INPUT</text>
+      <text x="22" y="72" fill="#F4F5F7" font-size="23" font-weight="680">已有内容</text>
+      <text x="22" y="99" fill="#929CAA" font-size="16">真实经历与素材</text>
+    </g>
+
+    <path d="M202 136 H248" stroke="#66707D" stroke-width="3"/>
+    <path d="M240 127 L249 136 L240 145" fill="none" stroke="#66707D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(262)">
+      <rect width="250" height="82" rx="18" fill="#20242C" stroke="#FF5A64"/>
+      <text x="20" y="31" fill="#FF8A91" font-size="16" font-weight="750">内容层</text>
+      <text x="20" y="59" fill="#F4F5F7" font-size="20" font-weight="650">这件事还有什么没讲完</text>
+
+      <rect y="96" width="250" height="82" rx="18" fill="#20242C" stroke="#9A78FF"/>
+      <text x="20" y="127" fill="#BCA8FF" font-size="16" font-weight="750">方法层</text>
+      <text x="20" y="155" fill="#F4F5F7" font-size="20" font-weight="650">这件事具体怎么完成</text>
+
+      <rect y="192" width="250" height="82" rx="18" fill="#20242C" stroke="#3370FF"/>
+      <text x="20" y="223" fill="#79A5FF" font-size="16" font-weight="750">元方法层</text>
+      <text x="20" y="251" fill="#F4F5F7" font-size="20" font-weight="650">这套方法怎么被找到</text>
+    </g>
+
+    <path d="M524 136 H570" stroke="#66707D" stroke-width="3"/>
+    <path d="M562 127 L571 136 L562 145" fill="none" stroke="#66707D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(584 54)">
+      <rect width="210" height="164" rx="20" fill="#20242C" stroke="#3A404A"/>
+      <text x="22" y="33" fill="#7DDBAE" font-size="16" font-weight="750">三问筛选</text>
+      <text x="22" y="72" fill="#F4F5F7" font-size="20" font-weight="650">有真实素材吗？</text>
+      <text x="22" y="105" fill="#F4F5F7" font-size="20" font-weight="650">与原文不同吗？</text>
+      <text x="22" y="138" fill="#F4F5F7" font-size="20" font-weight="650">有新的价值吗？</text>
+    </g>
+
+    <path d="M806 136 H852" stroke="#66707D" stroke-width="3"/>
+    <path d="M844 127 L853 136 L844 145" fill="none" stroke="#66707D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(866 78)">
+      <rect width="238" height="116" rx="20" fill="#20242C" stroke="#3370FF" stroke-width="2"/>
+      <text x="22" y="34" fill="#79A5FF" font-size="16" font-weight="750">OUTPUT</text>
+      <text x="22" y="72" fill="#F4F5F7" font-size="23" font-weight="680">系列与发布路线</text>
+      <text x="22" y="99" fill="#929CAA" font-size="16">优先三篇 · 最多五步</text>
+    </g>
+
+    <path d="M985 206 V260 C985 292 955 306 918 306 H140 C98 306 74 282 74 248 V208" fill="none" stroke="url(#loop)" stroke-width="3" stroke-dasharray="8 8"/>
+    <rect x="412" y="286" width="330" height="40" rx="20" fill="#1A2230" stroke="#334A70"/>
+    <text x="452" y="312" fill="#8FB2FF" font-size="17" font-weight="700">发布后的新结果，成为下一轮输入</text>
+  </g>
+</svg>
