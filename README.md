@@ -6,6 +6,10 @@
 
 # BeefSkill
 
+<p align="center">
+  简体中文 | <a href="./README.en.md">English</a>
+</p>
+
 面向 AI 时代创业者与个人创作者的 Skill 合集。
 
 它只聚焦两件事：**把 AI 产品做出来并持续增长**，以及**把真实经验沉淀为个人 AI 自媒体内容与影响力**。
