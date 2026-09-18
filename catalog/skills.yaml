@@ -1,0 +1,19 @@
+version: 1
+
+domains:
+  - id: ai-product-growth
+    title: AI 产品与增长
+    mission: 帮助用户发现、验证、包装并增长 AI 产品。
+  - id: personal-ai-media
+    title: 个人 AI 自媒体
+    mission: 帮助用户把真实经验沉淀为内容、个人影响力与内容产品。
+
+skills:
+  - id: beef-content-system
+    title: Beef Content System
+    domain: personal-ai-media
+    status: stable
+    path: skills/personal-ai-media/beef-content-system
+    trigger: 用户已有文章、推文、口播稿或真实经历，希望延伸出连续、差异明显的新内容。
+    input: 一篇已有内容、草稿或足够具体的真实经历。
+    output: 内容资产、优先选题、三层延伸、内容系列与发布顺序。

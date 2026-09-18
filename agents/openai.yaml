@@ -1,4 +1,4 @@
 interface:
-  display_name: "Beef Content System"
-  short_description: "从已有内容延伸观点、方法与元方法，生成精简系列选题"
-  default_prompt: "使用 $beef-content-system 分析这篇已有内容，生成三个优先选题、三层延伸方向和精简发布路线。"
+  display_name: "BeefSkill"
+  short_description: "AI 产品增长与个人 AI 自媒体的 Skill 合集入口"
+  default_prompt: "使用 $beefskill 判断我当前的问题属于 AI 产品与增长，还是个人 AI 自媒体，并推荐最合适的已安装 Skill。"

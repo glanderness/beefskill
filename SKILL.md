@@ -1,161 +1,36 @@
 ---
-name: beef-content-system
-description: 基于用户已有的文章、推文、口播稿、笔记或内容草稿，提取尚未用完的真实素材，再从内容、方法、元方法三层延伸出差异明显、能够连续发布的新选题。用户要求围绕一篇已有内容寻找下一篇、建立系列、提高素材利用率或持续扩展选题时使用。不要用于脱离原始素材凭空生成泛化选题。
+name: beefskill
+description: Use when a creator or solo AI entrepreneur has an AI product, growth, content, or personal-brand task and needs to find the appropriate BeefSkill capability. Do not use when a specific BeefSkill sub-skill has already been named.
 ---
 
-# Beef Content System
+# BeefSkill
 
-## 核心目标
+## Purpose
 
-把一篇已有内容继续向下延伸，而不是重新发明一个主题。优先使用用户真实做过的事情、形成的方法和思考过程，不把更换标题当作新选题，不补写不存在的事实。
+BeefSkill is a collection of focused skills for two connected goals:
 
-采用固定闭环：
+1. Build and grow AI products.
+2. Build a personal AI media presence and turn experience into reusable content assets.
 
-```text
-已有内容 → 提取内容资产 → 内容 / 方法 / 元方法 → 筛选 → 系列编排 → 新结果成为下一轮输入
-```
+This entrypoint routes requests. It does not replace an available specialist skill.
 
-## 输入
+## Routing
 
-要求用户提供一篇已有内容、草稿或足够具体的经历描述。
+Read [catalog/skills.yaml](catalog/skills.yaml) before choosing a capability.
 
-可选接收：
+- If the user names a BeefSkill sub-skill, use that sub-skill directly.
+- If the request concerns product opportunity, validation, packaging, acquisition, conversion, retention, or growth, look under **AI 产品与增长**.
+- If the request concerns content, personal positioning, publishing, content reuse, or personal media, look under **个人 AI 自媒体**.
+- Select only skills whose status is `stable`. Use one primary skill; add at most one helper only when the user has two necessary, independent tasks.
+- If no stable skill fits, say that the relevant capability is not installed yet. Do not pretend that a planned skill exists or manufacture a routing result.
 
-- 目标读者
-- 发布平台
-- 原文没有写进去的真实经历、过程或结果
+## Working principle
 
-原文足够时直接分析，不重复提问。只有缺少原始内容、无法建立任何可靠选题时，才先请求必要信息。
-
-始终区分：
-
-- `原文明确`：用户已经提供。
-- `合理推断`：可以推测但尚未确认。
-- `没有依据`：不得写成事实。
-
-## 三层扩展框架
-
-### 内容层
-
-寻找这件事本身还有什么没有讲完。内部使用七个问题检查：做了什么、怎么做、得到什么结果、为什么做、有什么思考、别人如何使用、下一步做什么。
-
-### 方法层
-
-寻找这篇内容背后的工作方法：具体步骤、工具分工、关键决策、判断标准和重要环节。
-
-### 元方法层
-
-寻找这套方法是如何形成的：观察了什么、比较了什么、怎样发现规律、如何验证有效、后来怎样调整。
-
-将“方法”理解为告诉别人怎么做；将“元方法”理解为告诉别人自己是怎么找到这套做法的。
-
-需要扩展角度时读取 [references/topic-axes.md](references/topic-axes.md)。
-
-## 工作流
-
-### 1. 提取内容资产
-
-从原文中选出最多 5 项最有延伸价值的素材，包括：
-
-- 真实行动或项目
-- 关键决策
-- 方法或流程
-- 结果或反馈
-- 一句话带过但值得展开的细节
-
-只保留能支撑后续选题的资产。
-
-### 2. 生成三层候选项
-
-分别从内容层、方法层、元方法层生成候选选题。内部可以广泛思考，最终每层最多输出 5 个。
-
-每个选题必须回答一个与原文不同的新问题。只改变语气、标题句式或表达形式，不算新选题。
-
-### 3. 完成内部筛选
-
-使用 [references/scoring-rubric.md](references/scoring-rubric.md) 中的三个问题筛选：
-
-1. 有真实素材吗？
-2. 与原文真的不同吗？
-3. 能给读者带来新的价值吗？
-
-三个答案都是“是”才保留。不要向用户展示分数或冗长的筛选过程。
-
-### 4. 选择三个优先选题
-
-从全部候选项中选出最值得先写的 3 个。依次优先：
-
-1. 用户现在就有足够素材写。
-2. 能自然承接原文。
-3. 写完后还能产生新的内容素材。
-
-每个优先选题只输出：
-
-- 推荐理由
-- 建议结构
-
-不要再输出核心角度、素材依据、与原文的区别、下一篇、目标读者或补充问题。
-
-### 5. 编排内容系列
-
-根据选题是否面向不同读者或解决不同任务，组织 1—2 个内容系列。每个系列最多安排 5 篇，并按自然递进顺序排列。
-
-不要为了凑数强行拆出多个系列。只有确实存在两条不同主线时才输出两个系列。
-
-### 6. 给出发布顺序
-
-从全部结果中选出最多 5 篇，给出最值得执行的发布顺序。优先采用：
+Keep product work and media work connected but distinct:
 
 ```text
-为什么做 → 怎么做 → 具体标准 → 方法如何形成 → 实际结果
+AI 产品与增长：做出、验证并增长一个产品
+个人 AI 自媒体：把真实经验沉淀为内容、影响力与内容产品
 ```
 
-根据原文实际素材调整，不机械套用。
-
-## 固定输出格式
-
-严格按照以下结构输出，不增加“原文诊断”或“素材追问”。
-
-### 一、可以继续利用的内容资产
-
-使用两列表格：`内容资产 | 可延伸方向`。最多 5 项。
-
-### 二、最值得先写的三个选题
-
-每个选题只包含：
-
-- 推荐理由
-- 建议结构
-
-### 三、按照三层框架继续延伸
-
-- 内容层：最多 5 个
-- 方法层：最多 5 个
-- 元方法层：最多 5 个
-
-只列选题，不为每个候选项增加解释。
-
-### 四、可以形成的内容系列
-
-输出 1—2 个系列，每个系列最多 5 篇。
-
-### 五、建议发布顺序
-
-输出最多 5 步，并在最后用一句话概括整体递进关系。
-
-完整示例见 [references/output-example.md](references/output-example.md)。
-
-## 质量约束
-
-- 宁可少于上限，也不要输出重复或价值较弱的选题。
-- 不承诺传播结果，只解释选题为什么值得写。
-- 不编造经历、数据、结果、反馈或研究过程。
-- 不把内容形式当作选题；故事、清单和教程只是表达方式。
-- 不输出复杂评分、长篇诊断和重复字段。
-- 不让单个优先选题承担多个核心任务。
-- 元方法必须来自真实的观察、比较、验证或调整过程；没有相关素材时减少该层数量。
-- 发布后产生的新结果和反馈，可以作为下一次使用本 skill 的新输入。
-
-## 结束方式
-
-输出报告后停止。等待用户选择某个选题，或提供新的内容进入下一轮。除非用户明确要求，不直接撰写完整成稿。
+After a specialist skill completes its work, its real results and feedback may become input for a later BeefSkill task.
