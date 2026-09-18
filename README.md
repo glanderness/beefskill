@@ -4,15 +4,15 @@
   </a>
 </p>
 
-# BeefSkill
+<h1 align="center">BeefSkill</h1>
 
 <p align="center">
   简体中文 | <a href="./README.en.md">English</a>
 </p>
 
-面向 AI 时代创业者与个人创作者的 Skill 合集。
+<p align="center">面向 AI 时代创业者与个人创作者的 Skill 合集。</p>
 
-它只聚焦两件事：**把 AI 产品做出来并持续增长**，以及**把真实经验沉淀为个人 AI 自媒体内容与影响力**。
+<p align="center">它只聚焦两件事：<strong>把 AI 产品做出来并持续增长</strong>，以及<strong>把真实经验沉淀为个人 AI 自媒体内容与影响力</strong>。</p>
 
 ## 两条主线
 

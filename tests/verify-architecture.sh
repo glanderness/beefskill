@@ -17,7 +17,8 @@ grep -q '个人 AI 自媒体' README.md
 test -f README.en.md
 grep -q 'README.en.md' README.md
 grep -q 'README.md' README.en.md
-grep -q '^# BeefSkill$' README.en.md
+grep -q '<h1 align="center">BeefSkill</h1>' README.md
+grep -q '<h1 align="center">BeefSkill</h1>' README.en.md
 
 test -f docs/architecture.md
 test -f docs/adding-a-skill.md

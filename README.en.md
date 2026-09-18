@@ -4,15 +4,15 @@
   </a>
 </p>
 
-# BeefSkill
+<h1 align="center">BeefSkill</h1>
 
 <p align="center">
   <a href="./README.md">简体中文</a> | English
 </p>
 
-An AI-era Skill collection for builders and independent creators.
+<p align="center">An AI-era Skill collection for builders and independent creators.</p>
 
-It focuses on two connected goals: **building and growing AI products**, and **turning real experience into personal AI media, influence, and reusable content assets**.
+<p align="center">It focuses on two connected goals: <strong>building and growing AI products</strong>, and <strong>turning real experience into personal AI media, influence, and reusable content assets</strong>.</p>
 
 ## Two Focus Areas
 
